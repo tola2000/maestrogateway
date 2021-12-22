@@ -298,3 +298,5 @@ if __name__ == "__main__":
         if socket_reconnect_count>_WS_RECONNECTS_BEFORE_ALERT:
             send_connection_status_message({"Status":"disconnected"})
             socket_reconnect_count = 0
+            
+            
