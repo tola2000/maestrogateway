@@ -22,7 +22,6 @@ MAESTRO_COMMANDS = []
 # Daemon Control Messages
 MAESTRO_COMMANDS.append(MaestroCommand('Refresh', 0, 'Refresh', 'Daemon'))
 MAESTRO_COMMANDS.append(MaestroCommand('GetInfo', 0, 'GetInfo', 'GetInfo'))
-# Maestro Control Messages
 MAESTRO_COMMANDS.append(MaestroCommand('Temperature_Setpoint', 42, 'temperature', 'Basic'))
 MAESTRO_COMMANDS.append(MaestroCommand('Boiler_Setpoint', 51, 'temperature', 'Basic'))
 MAESTRO_COMMANDS.append(MaestroCommand('Chronostat', 1111, 'onoff', 'Basic'))
@@ -38,7 +37,8 @@ MAESTRO_COMMANDS.append(MaestroCommand('Power', 34, 'onoff40', 'Basic'))
 MAESTRO_COMMANDS.append(MaestroCommand('Fan_State', 37, 'int', 'Basic'))# 0, 1, 2, 3 ,4,  5 ,6
 MAESTRO_COMMANDS.append(MaestroCommand('DuctedFan1', 38, 'int', 'Basic'))# 0, 1, 2, 3 ,4,  5 ,6
 MAESTRO_COMMANDS.append(MaestroCommand('DuctedFan2', 39, 'int', 'Basic'))# 0, 1, 2, 3 ,4,  5 ,6
-MAESTRO_COMMANDS.append(MaestroCommand('Control_Mode', 40, 'onoff', 'Basic')) # 0 = Auto , 1 = Manual
+MAESTRO_COMMANDS.append(MaestroCommand('Control_Mode', 40, 'onoff', 'Basic'))
+MAESTRO_COMMANDS.append(MaestroCommand('Profile', 149, 'int', 'Basic'))
 # Untested, proceed with caution
 MAESTRO_COMMANDS.append(MaestroCommand('Feeding_Screw', 34, '49', 'Basic')) # 49 as parameter to socket for feeding screw activiation
 MAESTRO_COMMANDS.append(MaestroCommand('Celsius_Fahrenheit', 49, 'int', 'Basic'))
